@@ -18,6 +18,5 @@
     openssl
     wget
     jetbrains-toolbox
-    python314
   ];
 }
