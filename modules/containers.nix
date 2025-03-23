@@ -1,6 +1,5 @@
 { config, pkgs, ... }:
 
-{
 { pkgs, ... }:
 {
   # Enable common container config files in /etc/containers
@@ -24,4 +23,4 @@
     podman-compose # start group of containers for dev
   ];
 }
-}
+
