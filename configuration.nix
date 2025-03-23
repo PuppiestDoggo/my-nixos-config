@@ -16,6 +16,7 @@
       ./modules/plasma.nix
       ./modules/pipewire.nix
       ./modules/boot.nix
+      ./modules/containers.nix
     ];
 
 
