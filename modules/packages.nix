@@ -18,5 +18,6 @@
     openssl
     wget
     jetbrains-toolbox
+    pmbootstrap
   ];
 }
