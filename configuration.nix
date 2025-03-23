@@ -21,7 +21,12 @@
     ];
 
 
-
+  nix.settings.auto-optimise-store = true;
+  nix.gc = {
+      automatic = true;
+      dates = "daily";
+      options = "--delete-older-than 30d";
+};
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "24.11"; # Did you read the comment?
