@@ -8,12 +8,12 @@
     localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
   };
 
-
   services.flatpak.enable = true;
   environment.systemPackages = with pkgs; [
     vim
     git 
     openssl
     wget
+    jetbrains-toolbox
   ];
 }
