@@ -1,27 +1,11 @@
 { config, lib, pkgs, ... }:
 
 {
+  boot.initrd.luks.devices."luks-ab7561ec-939b-43eb-b9ba-03a4477d7e21".device = "/dev/disk/by-uuid/ab7561ec-939b-43eb-b9ba-03a4477d7e21";
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
-
-  fileSystems."/" =
-    { device = "/dev/disk/by-label/nixos-root";
-      fsType = "ext4";
-    };
-
-  boot.initrd.luks.devices."luks-nixos-root".device = "/dev/disk/by-label/nixos-root";
-
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-label/EFI";
-      fsType = "vfat";
-      options = [ "fmask=0077" "dmask=0077" ];
-    };
-
-  swapDevices =
-    [ { device = "/dev/disk/by-label/swap"; }
-    ];
 
   # Enables DHCP on each ethernet and wireless interface.
   networking.useDHCP = lib.mkDefault true;
