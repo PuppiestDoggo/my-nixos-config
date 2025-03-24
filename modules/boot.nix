@@ -1,7 +1,6 @@
 { config, lib, pkgs, ... }:
 
 {
-  boot.initrd.luks.devices."luks-ab7561ec-939b-43eb-b9ba-03a4477d7e21".device = "/dev/disk/by-uuid/ab7561ec-939b-43eb-b9ba-03a4477d7e21";
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
