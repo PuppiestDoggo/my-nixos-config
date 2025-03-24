@@ -10,6 +10,7 @@
       ./hardware-configuration.nix
       ./modules/users.nix
 #      ./modules/nvidia.nix
+      ./modules/laptop.nix
       ./modules/locale.nix
       ./modules/packages.nix
       ./modules/network.nix
