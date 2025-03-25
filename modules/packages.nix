@@ -20,5 +20,6 @@
     jetbrains-toolbox
     htop
     wireguard-tools
+    jmtpfs
   ];
 }
