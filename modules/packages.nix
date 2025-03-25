@@ -19,5 +19,6 @@
     wget
     jetbrains-toolbox
     htop
+    wireguard-tools
   ];
 }
