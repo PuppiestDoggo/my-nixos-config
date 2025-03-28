@@ -18,7 +18,7 @@
       ./modules/pipewire.nix
       ./modules/boot.nix
       ./modules/containers.nix
-      ./modules/virtualization.nix
+#      ./modules/virtualization.nix
     ];
 
 
@@ -31,5 +31,6 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "24.11"; # Did you read the comment?
+
 
 }
