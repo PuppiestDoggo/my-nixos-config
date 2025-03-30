@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  programs.adb.enable = true;
+  programs.kdeconnect.enable = true;
   programs.steam = {
     extraCompatPackages = with pkgs; [
           proton-ge-bin

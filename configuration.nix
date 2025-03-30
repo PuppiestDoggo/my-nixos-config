@@ -31,5 +31,10 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "24.11"; # Did you read the comment?
+  networking.extraHosts = ''
+    172.16.126.138 replay.local glpi.replay.local git.replay.local
+  '';
+
+
 
 }
