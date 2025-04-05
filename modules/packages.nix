@@ -21,5 +21,6 @@
     htop
     wireguard-tools
     jmtpfs
+    alvr
   ];
 }
