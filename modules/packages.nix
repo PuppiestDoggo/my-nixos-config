@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+  services.gvfs.enable = true;
   programs.steam = {
     extraCompatPackages = with pkgs; [
           proton-ge-bin
@@ -22,6 +23,5 @@
     wireguard-tools
     jmtpfs
     alvr
-    gvfs-fuse
   ];
 }
