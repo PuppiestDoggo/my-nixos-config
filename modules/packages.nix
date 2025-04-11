@@ -22,5 +22,6 @@
     wireguard-tools
     jmtpfs
     alvr
+    gvfs-fuse
   ];
 }
