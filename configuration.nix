@@ -18,7 +18,8 @@
       ./modules/pipewire.nix
       ./modules/boot.nix
       ./modules/containers.nix
-#      ./modules/virtualization.nix
+      ./modules/virtualization.nix
+      ./modules/vmware.nix
     ];
 
 
