@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+  programs.adb.enable = true;
   services.gvfs.enable = true;
   programs.steam = {
     extraCompatPackages = with pkgs; [
@@ -23,5 +24,7 @@
     wireguard-tools
     jmtpfs
     alvr
+    distrobox
+    exegol
   ];
 }

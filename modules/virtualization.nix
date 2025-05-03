@@ -10,8 +10,8 @@
   virtualisation.libvirtd.enable = true;
 
   # Enable SPICE USB redirection for virtual machines
-  virtualisation.spiceUSBRedirection.enable = true;
+#  virtualisation.spiceUSBRedirection.enable = true;
 
   # Enable VMware host support
-  virtualisation.vmware.host.enable = true;
+#  virtualisation.vmware.host.enable = true;
 }
