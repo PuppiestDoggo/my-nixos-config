@@ -1,8 +1,11 @@
 { config, pkgs, ... }:
 
 {
-  programs.adb.enable = true;
-  programs.kdeconnect.enable = true;
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
+  services.monero.enable = true;
   programs.steam = {
     extraCompatPackages = with pkgs; [
           proton-ge-bin
@@ -23,5 +26,14 @@
     htop
     wireguard-tools
     jmtpfs
+    distrobox
+    zip
+    unzip
+    lsof
+    python312Full
+    appimage-run
+    globalprotect-openconnect
   ];
+
+
 }

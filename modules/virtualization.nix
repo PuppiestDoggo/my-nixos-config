@@ -13,5 +13,5 @@
   virtualisation.spiceUSBRedirection.enable = true;
 
   # Enable VMware host support
-  virtualisation.vmware.host.enable = true;
+#  virtualisation.vmware.host.enable = true;
 }
