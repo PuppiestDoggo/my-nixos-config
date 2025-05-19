@@ -31,8 +31,7 @@
     unzip
     lsof
     python312Full
-    appimage-run
-    globalprotect-openconnect
+    gpclient
   ];
 
 
